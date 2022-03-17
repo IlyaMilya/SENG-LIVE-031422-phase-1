@@ -4,10 +4,20 @@
 
 // Define a character variable and assign it to an object containing name, img, and likes keys. The value of likes should be 0 while name and img can be whatever pokemon character data you like. 'img' should be an address to an img as a string.
 
+const character1 = {
+  name: 'pikachu',
+  img: "www.img.com", // or null 
+  likes: 0
+}
 // Retreiving values from an object
+
+character1.name
 
 // Define a function increaseValue() that should take in 2 arguments: 'object' and 'key'. Increment the value returned from the 'key' by 1 so that every time the function is invoked, the number of likes will increment.
 
+let key = prompt("what do you want to know about the character. Enter ('name', 'img', or'likes')")
+console.log(key)
+console.log(character1[key])
 // Expectation: increaseValue(character, "likes") -> 1
 // Expectation: increaseValue(character, "likes") -> 2
 // Expectation: increaseValue(character, "likes") -> 3
